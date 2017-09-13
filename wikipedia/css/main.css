@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 313968 */
+  src: url('https://at.alicdn.com/t/font_7jmvbzaun8m8ia4i.eot');
+  src: url('https://at.alicdn.com/t/font_7jmvbzaun8m8ia4i.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_7jmvbzaun8m8ia4i.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_7jmvbzaun8m8ia4i.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_7jmvbzaun8m8ia4i.svg#iconfont') format('svg');
+}
+.iconfont {
+	font-family: "iconfont";
+	font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	min-width: 990px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 80px;
+	height: 230px;
+	width: 200px;
+	margin: auto;
+}
+	img[src*="logo"] {
+		width: 100%;
+		height: 100%;
+	}
+.search {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 320px;
+}
+	img[src*="name"] {
+		position: absolute;
+		left: -200px;
+		top: -5px;
+		display: none;
+		width: 178px;
+		
+		
+	}
+	.form {
+		position: relative;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		background-color: rgb(234, 234, 237);
+		border-radius: 2px;
+		/*box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);*/
+
+	}
+	.msg {
+		font-size: 14px;
+		position: absolute;
+		right: 100px;
+		color: #EF3031;
+		display: none;
+	}
+	.res {
+		font-size: 12px;
+		position: absolute;
+		right: 100px;
+		color: #999;
+		display: none;
+	}
+	.msg .iconfont {
+		font-size: 14px;
+		line-height: 14px;
+		margin-right: 5px;
+	}
+	input[type="text"] {
+		width: 80%;
+		height: 25px;
+		margin-left: 8px;
+		font: 16px arial,sans-serif;
+		background-color: transparent;
+		border: 0;
+		outline: none;
+	}
+	button {
+		float: right;
+		height: 30px;
+		width: 30px;
+		margin-right: 5px;
+		line-height: 40px;
+		color: #4285f4;
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+		outline: none;
+	}
+.loading {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	display: none;
+}
+	span[class*="l-"] {
+		width: 5px;height: 5px;
+		background-color: #333;
+		display: inline-block;
+		border-radius: 100%;
+		margin: 12px 2px;
+		animation: loading 4s infinite;
+		animation-fill-mode: both;
+		animation-timing-function: cubic-bezier(0.030, 0.615, 0.995, 0.415);
+	}
+	span.l-1 { animation-delay: 1s; }
+	span.l-2 { animation-delay: .8s; }
+	span.l-3 { animation-delay: .6s; }
+	span.l-4 { animation-delay: .4s; }
+	span.l-5 { animation-delay: .2s; }
+	span.l-6 { animation-delay: 0s; }
+	@keyframes loading {
+		0%{ transform: translateX(-30px); opacity: 0; }
+		25%{ opacity: 1; }
+		50%{transform: translateX(30px); opacity: 0; }
+		100%{ opacity: 0; }
+	}
+.search-result {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 10px;
+	/*display: none;*/
+}
+	ul {
+		list-style-type: none;
+	}
+	ul > li {
+		position: relative;
+		width: 100%;
+		height: 60px;
+		padding: 5px;
+		margin-top: 10px;
+		box-shadow: 0px 1px 1px 0px #ccc;
+	}
+	.thumbnail {
+		position: absolute;
+		left: -75px;
+		width: 60px;
+		height: 60px;
+		padding: 5px;
+		line-height: 60px;
+		text-align: center;
+	}
+	.thumbnail > a img {
+		width: 100%;
+		height: 100%;
+	}
+	.detail {
+		position: absolute;
+		bottom: 2px;
+		overflow: hidden;
+		vertical-align: text-bottom;
+	}
+	.detail > a {
+		font-size: 18px;
+		color: #609;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.message {
+		color: #545454;
+		font: small arial,sans-serif;
+		overflow: hidden;
+	}
